@@ -1,3 +1,8 @@
+## Profile
+**Nama:** Daffa Aqil Mahmud
+**NPM:** 2306245056
+**Kelas:** PBP C
+
 ## Project Link
 **Link:** http://daffa-aqil31-sigmart.pbp.cs.ui.ac.id
 
