@@ -49,7 +49,7 @@
 
 2. ***Bagan Request-Respond Django:*** <br/>
 ![Bagan Request-Respond Django](bagan_request-respond_django.jpeg)
-Request yang dikirim oleh user melalui web browser akan dikirim ke server dan diterima oleh `urls.py`. Lalu, berdasarkan URL yang diterima, `urls.py` akan mengatur/menentukan (routing) request tersebut diteruskan ke fungsi atau class mana yang berada di dalam `views.py`. `views.py` adalah modul yang mengatur jalannya logika aplikasi. Jika diperlukan, `views.py` dapat menentukan untuk mengakses `models.py` untuk dapat berinteraksi dengan database. Setelah semua request telah dijalankan, `view.py` akan me-render berkas HTML untuk ditampilkan ke user.
+Request yang dikirim oleh user melalui web browser akan dikirim ke server dan diterima oleh `urls.py`. Lalu, berdasarkan URL yang diterima, `urls.py` akan mengatur/menentukan (routing) request tersebut diteruskan ke fungsi atau class mana yang berada di dalam `views.py`. `views.py` adalah modul yang mengatur jalannya logika aplikasi. Jika diperlukan, `views.py` dapat menentukan untuk mengakses `models.py` untuk dapat berinteraksi dengan database. Setelah semua request telah dijalankan, `views.py` akan me-render berkas HTML untuk ditampilkan ke user.
 
 3. ***Jelaskan fungsi git dalam pengembangan perangkat lunak!*** <br/>
 &emsp;Git utamanya digunakan untuk dokumentasi source code. Git memungkinkan untuk menyimpan,  mengelola, dan berbagi source code secara efisien dan kolaboratif. Selain itu, developers juga dapat melacak perubahan kode, membuat backup, dan menyimpan versi-versi berbeda dari source code yang mereka buat. Dengan kemampuan yang ditawarkan tersebut, git sangatlah berguna dalam membantu pengembangan perangkat lunak.
