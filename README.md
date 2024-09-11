@@ -1,7 +1,7 @@
 ## Profile
-**Nama:** Daffa Aqil Mahmud
-**NPM:** 2306245056
-**Kelas:** PBP C
+***Nama:*** Daffa Aqil Mahmud<br/>
+***NPM:*** 2306245056<br/>
+***Kelas:*** PBP C
 
 ## Project Link
 **Link:** http://daffa-aqil31-sigmart.pbp.cs.ui.ac.id
@@ -20,7 +20,7 @@
         **9.** Melakukan add-commit-push ke github dan deploy ke pws.
 
     *Checklist 2:*<br/>
-        **1.** Membuat direktori main (aplikasi main) dengan menggunakan fungsi "startapp" yang ada di dalam modul manage.py .<br/>
+        **1.** Membuat direktori main (aplikasi main) dengan menggunakan fungsi "startapp" yang ada di dalam modul manage.py.<br/>
         **2.** Menambahkan aplikasi main ke dalam variabel “INSTALLED_APPS” pada settings.py untuk mendaftarkan aplikasi main ke projek sigmart.<br/>
         **3.** Membuat direktori baru dalam direktori main beenama “templates”.<br/>
         **4.** Membuat file html bernama main.html dalam direktori template yg baru dibuat. File html ini berfungsi untuk mengatur tampilan dari aplikasi.
