@@ -7,7 +7,7 @@
 **Link:** http://daffa-aqil31-sigmart.pbp.cs.ui.ac.id
 
 ## Jawaban Pertanyaan Tugas 2
-1. **Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step!** <br/>
+1. ***Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step!*** <br/>
     *Checklist 1:*<br/>
         **1.** Membuat repositori github baru dengan nama sigmart.<br/>
         **2.** Membuat direktori lokal utama bernama sigmart.<br/>
@@ -47,14 +47,14 @@
         **1.** Setelah langkah-langkah pada checklist sebelumnya dilakukan, saya melakukan add-commit-push untuk kedua kalinya untuk memperbarui halaman repositori sigmart pada github saya.<br/>
         **2.** Setelah push ke github, langkah terakhir adalah untuk push ke server pws (deployment) untuk memperbarui server pws sigmart.
 
-2. **Bagan Request-Respond Django:** <br/>
+2. ***Bagan Request-Respond Django:*** <br/>
 ![Bagan Request-Respond Django](bagan_request-respond_django.jpeg)
 
-3. **Jelaskan fungsi git dalam pengembangan perangkat lunak!** <br/>
+3. ***Jelaskan fungsi git dalam pengembangan perangkat lunak!*** <br/>
 &emsp;Git utamanya digunakan untuk dokumentasi source code. Git memungkinkan untuk menyimpan,  mengelola, dan berbagi source code secara efisien dan kolaboratif. Selain itu, developers juga dapat melacak perubahan kode, membuat backup, dan menyimpan versi-versi berbeda dari source code yang mereka buat. Dengan kemampuan yang ditawarkan tersebut, git sangatlah berguna dalam membantu pengembangan perangkat lunak.
 
-4. **Menurut Anda, dari semua framework yang ada, mengapa framework Django dijadikan permulaan pembelajaran pengembangan perangkat lunak?** <br/>
+4. ***Menurut Anda, dari semua framework yang ada, mengapa framework Django dijadikan permulaan pembelajaran pengembangan perangkat lunak?*** <br/>
 &emsp;Menurut saya, Django digunakan untuk permulaan pembelajaran pengembangan perangkat lunak karena mudah dipelajari dan digunakan. Django juga menyediakan banyak fitur bawaan yang diperlukan untuk pengembangan aplikasi web, sehingga pemula tidak perlu repot-repot mengonfigurai banyak komponen eksternal. Selain itu, Django adalah framework yang berbasis python, dan python adalah bahasa yang paling mudah untuk dipelajari oleh pemula karena bahasanya yang simpel. Hal ini akan memudahkan pemula dalam mempelajari pengembangan perangkat lunak menggunakan Django.
 
-5. **Mengapa model pada Django disebut sebagai ORM?** <br/>
+5. ***Mengapa model pada Django disebut sebagai ORM?*** <br/>
 &emsp;Model pada Django disebut ORM karena Django menerapkan ORM untuk mengelola interaksi objek dan database. ORM sendiri adalah teknik pemrograman yang menghubungkan atau memetakan objek dalam kode program ke tabel-tabel dalam database relasional, seperti PostgreSQL, MySQL, SQLite, dan lainnya. Pada Django, ORM digunakan untuk menerjemahkan operasi pada objek model python ini menjadi query SQL yang sesuai untuk mengakses, menyimpan, mengubah, atau menghapus data dalam database. Oleh karena itu, model Django disebut sebagai ORM.
