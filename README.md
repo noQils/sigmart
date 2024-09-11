@@ -1,8 +1,8 @@
 ## Project Link
-Link: http://daffa-aqil31-sigmart.pbp.cs.ui.ac.id
+**Link:** http://daffa-aqil31-sigmart.pbp.cs.ui.ac.id
 
 ## Jawaban Pertanyaan Tugas 2
-1. **Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step.** <br/>
+1. **Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step!** <br/>
     *Checklist 1:*<br/>
         **1.** Membuat repositori github baru dengan nama sigmart.<br/>
         **2.** Membuat direktori lokal utama bernama sigmart.<br/>
