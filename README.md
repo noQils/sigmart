@@ -59,3 +59,40 @@ Request yang dikirim oleh user melalui web browser akan dikirim ke server dan di
 
 5. ***Mengapa model pada Django disebut sebagai ORM?*** <br/>
 &emsp;Model pada Django disebut ORM karena Django menerapkan ORM untuk mengelola interaksi objek dan database. ORM sendiri adalah teknik pemrograman yang menghubungkan atau memetakan objek dalam kode program ke tabel-tabel dalam database relasional, seperti PostgreSQL, MySQL, SQLite, dan lainnya. Pada Django, ORM digunakan untuk menerjemahkan operasi pada objek model python ini menjadi query SQL yang sesuai untuk mengakses, menyimpan, mengubah, atau menghapus data dalam database. Oleh karena itu, model Django disebut sebagai ORM.
+
+## Jawaban Pertanyaan Tugas 3
+1. ***Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?*** <br/>
+&emsp;Data delivery adalah tulang punggung dalam pengimplementasian sebuah platform karena memungkinkan akses cepat, konsisten, dan aman terhadap data yang dibutuhkan oleh pengguna atau komponen lain dalam platform. Tanpa data delivery yang bagus, platform tidak akan dapat beroperasi secara efisien, mengurangi keandalan, skalabilitas, dan kualitas pengalaman pengguna.
+
+2. ***Menurutmu, mana yang lebih baik antara XML dan JSON? Mengapa JSON lebih populer dibandingkan XML?*** <br/>
+&emsp;Menurut saya, JSON lebih baik daripada XML karena format penjabaran informasi pada JSON lebih mudah untuk dibaca dan dipahami (lebih *human-readable*). Hal itu juga merupakan hal yang membuat JSON lebih populer dari XML.
+
+3. ***Jelaskan fungsi dari method `is_valid()` pada form Django dan mengapa kita membutuhkan method tersebut?*** <br/>
+&emsp;Method `is_valid` pada Django memiliki peran untuk memastikan data yang diproses sudah valid (dalam format yang tepat), sehingga dapat menghindari memproses data-data yang rusak.
+
+4. ***Mengapa kita membutuhkan csrf_token saat membuat form di Django? Apa yang dapat terjadi jika kita tidak menambahkan `csrf_token` pada form Django? Bagaimana hal tersebut dapat dimanfaatkan oleh penyerang?***<br/>
+&emsp;`csrf_token` dalam form Django sangat penting untuk mencegah serangan Cross-Site Request Forgery (CSRF) yang bisa memanipulasi aplikasi untuk melakukan tindakan yang tidak diinginkan atas nama pengguna yang sah. Jika tidak menambahkan csrf_token, aplikasi yang dibuat menjadi rentan terhadap berbagai serangan yang bisa dieksploitasi oleh penyerang (hacker) untuk mencuri data, mengubah pengaturan akun, atau melakukan transaksi berbahaya.
+
+5. ***Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step!*** <br/>
+    *Checklist 1:*<br/>
+        **1.** Membuat direktori `templates` di folder root dan membuat file `base.html` di dalamnya.<br/>
+        **2.** Menghapus file `db.sqlite3` sebelumnya.<br/>
+        **3.** Mengubah id yang tadinya integer menjadi UUID.<br/> 
+        **4.** Membuat file `forms.py` di direktori `main`.<br/>
+        **5.** Menambahkan list `field` di dalam `forms.py` dengan nilai `["name", "description", "price"]`.<br/>
+        **6.** Menambahkan fungsi `create_product_entry` pada modul `views.py`.<br/>
+        **7.** Menambahkan pattern urls dari fungsi `create_product_entry` ke `urls.py` yang ada dalam direktori `main`.<br/>
+        **6.** Membuat file `create_product_entry.html` untuk tampilan memasukkan product baru.<br/>
+        **7.** Menampilkan data `Product` yang telah dimasukkan dengan mengubah isi `main.html`. 
+
+    *Checklist 2:*<br/>
+        **1.** Menambahkan fungsi-fungsi pada modul `views.py` untuk mendapatkan informasi objek yang sudah dimasukkan ke aplikasi dalam format XML, JSON, XML by id, dan JSON by id.
+    
+    *Cheklist 3:*<br/>
+        **1.** Menambahkan pattern urls dari fungsi-fungsi XML dan JSON yang telah ditambahkan di `views.py` ke `urls.py` yang ada dalam direktori `main`.
+
+6. ***ScreenShot JSON dan XML*** <br/>
+![alt text](<XML by id.png>) 
+![alt text](<JSON by id.png>) 
+![alt text](JSON.png) 
+![alt text](XML.png)
