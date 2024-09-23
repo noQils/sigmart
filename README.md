@@ -1,6 +1,6 @@
 ## Profile
-***Nama:*** Daffa Aqil Mahmud<br/>
-***NPM:*** 2306245056<br/>
+***Nama:*** Daffa Aqil Mahmud  
+***NPM:*** 2306245056  
 ***Kelas:*** PBP C
 
 ## Project Link
@@ -8,39 +8,38 @@
 
 ## Jawaban Pertanyaan Tugas 2
 ***1. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step!***
-
 * **Checklist 1:**
-    1. Membuat repositori github baru dengan nama sigmart.
-    2. Membuat direktori lokal utama bernama sigmart.
-    3. Membuat virtual environtment pada direktori utama dan mengaktifkannya.
-    4. Virtual environtment digunakan untuk menginstall library-library python yang dibutuhkan seperti Django, Gunicorn, URLLib3, dan lain-lain.
-    5. Memulai projek Django baru dengan menjalankan perintah `django-admin startproject sigmart .`
-    6. Menambahkan host lokal dan host dari server pws ke variabel `ALLOWED_HOST` pada modul `settings.py` agar projek dapat diakses dari server lokal dan pws.
-    7. Membuat projek baru pada akun pws saya dengan nama sigmart.
-    8. Menghubungkan projek sigmart pada pws dengan direktori sigmart yang terdapat pada direktori lokal saya.
-    9. Melakukan add-commit-push ke github dan deploy ke pws.
+    1. > Membuat repositori github baru dengan nama sigmart.
+    2. > Membuat direktori lokal utama bernama sigmart.
+    3. > Membuat virtual environtment pada direktori utama dan mengaktifkannya.
+    4. > Virtual environtment digunakan untuk menginstall library-library python yang dibutuhkan seperti Django, Gunicorn, URLLib3, dan lain-lain.
+    5. > Memulai projek Django baru dengan menjalankan perintah `django-admin startproject sigmart .`
+    6. > Menambahkan host lokal dan host dari server pws ke variabel `ALLOWED_HOST` pada modul `settings.py` agar projek dapat diakses dari server lokal dan pws.
+    7. > Membuat projek baru pada akun pws saya dengan nama sigmart.
+    8. > Menghubungkan projek sigmart pada pws dengan direktori sigmart yang terdapat pada direktori lokal saya.
+    9. > Melakukan add-commit-push ke github dan deploy ke pws.
 * **Checklist 2:**
-    1. Membuat direktori main (aplikasi main) dengan menggunakan fungsi "startapp" yang ada di dalam modul `manage.py`.
-    2. Menambahkan aplikasi main ke dalam variabel “INSTALLED_APPS” pada `settings.py` untuk mendaftarkan aplikasi main ke projek sigmart.
-    3. Membuat direktori baru dalam direktori main beenama “templates”.
-    4. Membuat file html bernama `main.html` dalam direktori template yg baru dibuat. File html ini berfungsi untuk mengatur tampilan dari aplikasi.
+    1. > Membuat direktori main (aplikasi main) dengan menggunakan fungsi "startapp" yang ada di dalam modul `manage.py`.
+    2. > Menambahkan aplikasi main ke dalam variabel “INSTALLED_APPS” pada `settings.py` untuk mendaftarkan aplikasi main ke projek sigmart.
+    3. > Membuat direktori baru dalam direktori main beenama “templates”.
+    4. > Membuat file html bernama `main.html` dalam direktori template yg baru dibuat. File html ini berfungsi untuk mengatur tampilan dari aplikasi.
 * **Checklist 3:**
-    1. Pada direktori projek utama terdapat modul bernama `urls.py`. Pada file tersebut saya menambahkan rute URL yang mengarah ke tampilan main.
+    1. > Pada direktori projek utama terdapat modul bernama `urls.py`. Pada file tersebut saya menambahkan rute URL yang mengarah ke tampilan main.
 * **Checklist 4:**
-    1. Membuat class bernama Product dalam `models.py` yang terdapat dalam aplikasi main.
-    2. Menambahkan atribut-atribut wajib di dalam class Product yaitu name (nama produk/item), price (harga produk), dan description (deskripsi penjelasan tentang produk).
-    3. Selain atribut wajib, saya juga menambahkan dua atribut lain, yaitu rating (rating dari pembeli tentang produk) dan date (tanggal).
+    1. > Membuat class bernama Product dalam `models.py` yang terdapat dalam aplikasi main.
+    2. > Menambahkan atribut-atribut wajib di dalam class Product yaitu name (nama produk/item), price (harga produk), dan description (deskripsi penjelasan tentang produk).
+    3. > Selain atribut wajib, saya juga menambahkan dua atribut lain, yaitu rating (rating dari pembeli tentang produk) dan date (tanggal).
 * **Checklist 5:**
-    1. Menambahkan fungsi show_main dalam modul `views.py` pada aplikasi main.
-    2. Membuat variabel dictionary baru bernama context. Dictionary ini akan diisi dengan data-data yang akan ditampilkan saat aplikasi main diakses.
-    3. Menambahkan data-data berupa informasi nama aplikasi, nama saya, dan kelas PBP di dalam dictionary context.
-    4. Menambahkan kode dalam `main.html` yang sudah dibuat pada checklist pertama sehingga file `main.html` dapat menampilkan ucapan selamat datang dan juga menampilkan data-data yang ada dalam dictionary context.
+    1. > Menambahkan fungsi show_main dalam modul `views.py` pada aplikasi main.
+    2. > Membuat variabel dictionary baru bernama context. Dictionary ini akan diisi dengan data-data yang akan ditampilkan saat aplikasi main diakses.
+    3. > Menambahkan data-data berupa informasi nama aplikasi, nama saya, dan kelas PBP di dalam dictionary context.
+    4. > Menambahkan kode dalam `main.html` yang sudah dibuat pada checklist pertama sehingga file `main.html` dapat menampilkan ucapan selamat datang dan juga menampilkan data-data yang ada dalam dictionary context.
 * **Checklist 6:**
-    1. Membuat modul `urls.py` dalam direktori main. Modul ini bertanggung jawab dalam mengatur rute URL yang berkaitan dengan aplikasi main. Modul `urls.py` dalam aplikasi main akan memanggil fungsi show_main yg ada pada modul view.py sebagai tampilan yang akan ditampilkan ketika URL diakses.
-    2. Membuat return render yang akan me-render tampilan dari `main.html`.
+    1. > Membuat modul `urls.py` dalam direktori main. Modul ini bertanggung jawab dalam mengatur rute URL yang berkaitan dengan aplikasi main. Modul `urls.py` dalam aplikasi main akan memanggil fungsi show_main yg ada pada modul view.py sebagai tampilan yang akan ditampilkan ketika URL diakses.
+    2. > Membuat return render yang akan me-render tampilan dari `main.html`.
  * **Checklist 7:**
-    1. Setelah langkah-langkah pada checklist sebelumnya dilakukan, saya melakukan add-commit-push untuk kedua kalinya untuk memperbarui halaman repositori sigmart pada github saya.
-    2. Setelah push ke github, langkah terakhir adalah untuk push ke server pws (deployment) untuk memperbarui server pws sigmart.
+    1. > Setelah langkah-langkah pada checklist sebelumnya dilakukan, saya melakukan add-commit-push untuk kedua kalinya untuk memperbarui halaman repositori sigmart pada github saya.
+    2. > Setelah push ke github, langkah terakhir adalah untuk push ke server pws (deployment) untuk memperbarui server pws sigmart.
 
 ***2. Bagan Request-Respond Django:***
 ![Bagan Request-Respond Django](bagan_request-respond_django.jpeg)
@@ -51,7 +50,6 @@
 
 ***4. Menurut Anda, dari semua framework yang ada, mengapa framework Django dijadikan permulaan pembelajaran pengembangan perangkat lunak?***
 > Menurut saya, Django digunakan untuk permulaan pembelajaran pengembangan perangkat lunak karena mudah dipelajari dan digunakan. Django juga menyediakan banyak fitur bawaan yang diperlukan untuk pengembangan aplikasi web, sehingga pemula tidak perlu repot-repot mengonfigurai banyak komponen eksternal. Selain itu, Django adalah framework yang berbasis python, dan python adalah bahasa yang paling mudah untuk dipelajari oleh pemula karena bahasanya yang simpel. Hal ini akan memudahkan pemula dalam mempelajari pengembangan perangkat lunak menggunakan Django.
-</ul><br>
 
 ***5. Mengapa model pada Django disebut sebagai ORM?***
 > Model pada Django disebut ORM karena Django menerapkan ORM untuk mengelola interaksi objek dan database. ORM sendiri adalah teknik pemrograman yang menghubungkan atau memetakan objek dalam kode program ke tabel-tabel dalam database relasional, seperti PostgreSQL, MySQL, SQLite, dan lainnya. Pada Django, ORM digunakan untuk menerjemahkan operasi pada objek model python ini menjadi query SQL yang sesuai untuk mengakses, menyimpan, mengubah, atau menghapus data dalam database. Oleh karena itu, model Django disebut sebagai ORM.
@@ -71,19 +69,19 @@
 
 ***5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step!***
 * **Checklist 1:**
-    1. Membuat direktori `templates` di folder root dan membuat file `base.html` di dalamnya.
-    2. Menghapus file `db.sqlite3` sebelumnya.
-    3. Mengubah id yang tadinya integer menjadi UUID.
-    4. Membuat file `forms.py` di direktori `main`.
-    5. Menambahkan list `field` di dalam `forms.py` dengan nilai `["name", "description", "price"]`.
-    6. Menambahkan fungsi `create_product_entry` pada modul `views.py`.
-    7. Menambahkan pattern urls dari fungsi `create_product_entry` ke `urls.py` yang ada dalam direktori `main`.
-    8. Membuat file `create_product_entry.html` untuk tampilan memasukkan product baru.
-    9. Menampilkan data `Product` yang telah dimasukkan dengan mengubah isi `main.html`.
+    1. > Membuat direktori `templates` di folder root dan membuat file `base.html` di dalamnya.
+    2. > Menghapus file `db.sqlite3` sebelumnya.
+    3. > Mengubah id yang tadinya integer menjadi UUID.
+    4. > Membuat file `forms.py` di direktori `main`.
+    5. > Menambahkan list `field` di dalam `forms.py` dengan nilai `["name", "description", "price"]`.
+    6. > Menambahkan fungsi `create_product_entry` pada modul `views.py`.
+    7. > Menambahkan pattern urls dari fungsi `create_product_entry` ke `urls.py` yang ada dalam direktori `main`.
+    8. > Membuat file `create_product_entry.html` untuk tampilan memasukkan product baru.
+    9. > Menampilkan data `Product` yang telah dimasukkan dengan mengubah isi `main.html`.
 * **Checklist 2:**
-    1. Menambahkan fungsi-fungsi pada modul `views.py` untuk mendapatkan informasi objek yang sudah dimasukkan ke aplikasi dalam format XML, JSON, XML by id, dan JSON by id.
+    1. > Menambahkan fungsi-fungsi pada modul `views.py` untuk mendapatkan informasi objek yang sudah dimasukkan ke aplikasi dalam format XML, JSON, XML by id, dan JSON by id.
 * **Cheklist 3:**
-    1. Menambahkan pattern urls dari fungsi-fungsi XML dan JSON yang telah ditambahkan di `views.py` ke `urls.py` yang ada dalam direktori `main`.
+    1. > Menambahkan pattern urls dari fungsi-fungsi XML dan JSON yang telah ditambahkan di `views.py` ke `urls.py` yang ada dalam direktori `main`.
 
 ***6. ScreenShot JSON dan XML***
 ![alt text](<XML by id.png>) 
@@ -93,19 +91,19 @@
 
 ## Jawaban Pertanyaan Tugas 4
 ***1. Apa perbedaan antara `HttpResponseRedirect()` dan `redirect()`***
-* **HttpResponseRedirect()** hanya menerima URL string dan lebih manual dalam penggunaannya.
-* **redirect()** lebih fleksibel karena mendukung lebih banyak jenis argumen dan memudahkan pengembangan.
+* > **HttpResponseRedirect()** hanya menerima URL string dan lebih manual dalam penggunaannya.
+* > **redirect()** lebih fleksibel karena mendukung lebih banyak jenis argumen dan memudahkan pengembangan.
 
 ***2. Jelaskan cara kerja penghubungan model `Product` dengan `User`!***
 > **OneToMany:** Menggunakan `ForeignKey` untuk menghubungkan setiap produk ke satu pemilik (User). 
 
 ***3. Apa perbedaan antara authentication dan authorization, apakah yang dilakukan saat pengguna login? Jelaskan bagaimana Django mengimplementasikan kedua konsep tersebut.***
-* **Authentication** adalah proses verifikasi identitas pengguna. Ini mencakup memastikan bahwa pengguna adalah siapa yang mereka klaim dengan cara memeriksa kredensial mereka, seperti username dan password.
-    * Saat pengguna melakukan login, Django menggunakan modul `django.contrib.auth` untuk memverifikasi kredensial pengguna.
-    * Jika kredensial valid, pengguna dianggap terautentikasi dan dapat mengakses bagian tertentu dari aplikasi.
-* **Authorization** adalah proses menentukan apakah pengguna yang terautentikasi memiliki izin untuk mengakses sumber daya tertentu atau melakukan tindakan tertentu. Ini berhubungan dengan kontrol akses.
-    * Setelah pengguna terautentikasi, sistem dapat memeriksa apakah mereka memiliki izin untuk mengakses view atau melakukan tindakan tertentu, seperti mengedit atau menghapus data.
-    * Django menyediakan decorator seperti `@login_required` dan sistem izin untuk membantu mengelola otorisasi.
+* > **Authentication** adalah proses verifikasi identitas pengguna. Ini mencakup memastikan bahwa pengguna adalah siapa yang mereka klaim dengan cara memeriksa kredensial mereka, seperti username dan password.
+    * > Saat pengguna melakukan login, Django menggunakan modul `django.contrib.auth` untuk memverifikasi kredensial pengguna.
+    * > Jika kredensial valid, pengguna dianggap terautentikasi dan dapat mengakses bagian tertentu dari aplikasi.
+* > **Authorization** adalah proses menentukan apakah pengguna yang terautentikasi memiliki izin untuk mengakses sumber daya tertentu atau melakukan tindakan tertentu. Ini berhubungan dengan kontrol akses.
+    * > Setelah pengguna terautentikasi, sistem dapat memeriksa apakah mereka memiliki izin untuk mengakses view atau melakukan tindakan tertentu, seperti mengedit atau menghapus data.
+    * > Django menyediakan decorator seperti `@login_required` dan sistem izin untuk membantu mengelola otorisasi.
 
 ***4. Bagaimana Django mengingat pengguna yang telah login? Jelaskan kegunaan lain dari cookies dan apakah semua cookies aman digunakan?***
 * **Cara Django Mengingat Pengguna yang Telah Login**
@@ -127,45 +125,45 @@
 * **Keamanan Cookies**
     > Tidak semua cookies aman digunakan. Meskipun cookies sangat berguna untuk mengelola sesi pengguna dan menyimpan informasi lain, ada beberapa risiko dan kondisi yang dapat membuat cookies tidak aman.
     1. **Risiko Keamanan Cookies**
-        * **XSS (Cross-Site Scripting):** Jika aplikasi web rentan terhadap serangan XSS, penyerang dapat menyisipkan skrip berbahaya ke dalam halaman yang dapat mengakses cookies pengguna. Jika cookies tidak diatur dengan flag HttpOnly, penyerang bisa mencuri informasi sensitif yang tersimpan dalam cookies.
-        * **CSRF (Cross-Site Request Forgery):** Cookies yang tidak dilindungi dapat digunakan dalam serangan CSRF, di mana penyerang memanfaatkan sesi pengguna yang sudah terautentikasi untuk melakukan tindakan tanpa sepengetahuan pengguna.
-        * **Man-in-the-Middle Attacks:** Jika cookie tidak dilindungi oleh HTTPS (dengan flag Secure), penyerang dapat menangkap cookies dalam perjalanan antara klien dan server, terutama dalam koneksi yang tidak aman.
+        * > **XSS (Cross-Site Scripting):** Jika aplikasi web rentan terhadap serangan XSS, penyerang dapat menyisipkan skrip berbahaya ke dalam halaman yang dapat mengakses cookies pengguna. Jika cookies tidak diatur dengan flag HttpOnly, penyerang bisa mencuri informasi sensitif yang tersimpan dalam cookies.
+        * > **CSRF (Cross-Site Request Forgery):** Cookies yang tidak dilindungi dapat digunakan dalam serangan CSRF, di mana penyerang memanfaatkan sesi pengguna yang sudah terautentikasi untuk melakukan tindakan tanpa sepengetahuan pengguna.
+        * > **Man-in-the-Middle Attacks:** Jika cookie tidak dilindungi oleh HTTPS (dengan flag Secure), penyerang dapat menangkap cookies dalam perjalanan antara klien dan server, terutama dalam koneksi yang tidak aman.
     2. **Kebocoran Data Sensitif**
-        * **Data Pribadi:** Jika aplikasi menyimpan data pribadi atau informasi sensitif (seperti password, nomor kartu kredit, dll.) dalam cookies, itu bisa berisiko. Cookies bisa diakses oleh pengguna lain yang menggunakan perangkat yang sama atau melalui serangan.
+        * > **Data Pribadi:** Jika aplikasi menyimpan data pribadi atau informasi sensitif (seperti password, nomor kartu kredit, dll.) dalam cookies, itu bisa berisiko. Cookies bisa diakses oleh pengguna lain yang menggunakan perangkat yang sama atau melalui serangan.
     4. **Cookies Permanen vs. Cookies Sesi**
-        * **Cookies Permanen:** Cookies yang disimpan untuk periode yang lebih lama dapat menjadi target bagi penyerang. Jika seorang penyerang mendapatkan akses ke perangkat pengguna, mereka dapat mengakses cookies yang tersimpan dan melakukan penyalahgunaan.
-        * **Cookies Sesi:** Meskipun lebih aman karena hanya aktif selama sesi pengguna, jika tidak diatur dengan baik, mereka masih dapat berisiko jika terdapat kerentanan keamanan lainnya.
+        * > **Cookies Permanen:** Cookies yang disimpan untuk periode yang lebih lama dapat menjadi target bagi penyerang. Jika seorang penyerang mendapatkan akses ke perangkat pengguna, mereka dapat mengakses cookies yang tersimpan dan melakukan penyalahgunaan.
+        * > **Cookies Sesi:** Meskipun lebih aman karena hanya aktif selama sesi pengguna, jika tidak diatur dengan baik, mereka masih dapat berisiko jika terdapat kerentanan keamanan lainnya.
 
 ***5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step***
 * **Checklist 1:**
     * **Registrasi:**
-        1. Menyalakan virtual environment.
-        2. Import `UserCreationForm` dan `messages` ke modul `views.py` yang ada di direktori `main`.
-        3. Menambahkan fungsi register pada `views.py` untuk mengatur logic saat registrasi ingin dilakukan.
-        4. Membuat file `register.html` di direktori `templates` yang ada di direktori `main`. File ini akan menampilkan laman registrasi tempat dimana registrasi dapat dilakukan.
-        5. Mengimport fungsi register yang telah dibuat ke modul `urls.py` dan menambahkan routing fungsi tersebut pada list `urlpatterns`.
+        1. > Menyalakan virtual environment.
+        2. > Import `UserCreationForm` dan `messages` ke modul `views.py` yang ada di direktori `main`.
+        3. > Menambahkan fungsi register pada `views.py` untuk mengatur logic saat registrasi ingin dilakukan.
+        4. > Membuat file `register.html` di direktori `templates` yang ada di direktori `main`. File ini akan menampilkan laman registrasi tempat dimana registrasi dapat dilakukan.
+        5. > Mengimport fungsi register yang telah dibuat ke modul `urls.py` dan menambahkan routing fungsi tersebut pada list `urlpatterns`.
     * **Login:**
-        1. Import `authenticate`, `login`, dan `AuthenticationForm` ke `views.py`.
-        2. Membuat fungsi `login_user` di dalam `views.py` untuk mengatur logic proses login.
-        3. Membuat file `login.html` di direktori `templates` yang ada di direktori `main`. File ini akan menampilkan laman login tempat dimana login dapat dilakukan.
-        4. Mengimport fungsi login yang telah dibuat ke modul `urls.py` dan menambahkan routing fungsi tersebut pada list `urlpatterns`.
+        1. > Import `authenticate`, `login`, dan `AuthenticationForm` ke `views.py`.
+        2. > Membuat fungsi `login_user` di dalam `views.py` untuk mengatur logic proses login.
+        3. > Membuat file `login.html` di direktori `templates` yang ada di direktori `main`. File ini akan menampilkan laman login tempat dimana login dapat dilakukan.
+        4. > Mengimport fungsi login yang telah dibuat ke modul `urls.py` dan menambahkan routing fungsi tersebut pada list `urlpatterns`.
     * **Logout:**
-        1. Import `logout` ke `views.py`.
-        2. Membuat fungsi `logout_user` di dalam `views.py` untuk mengatur logic proses logout.
-        3. Membuat file `logout.html` di direktori `templates` yang ada di direktori `main`. File ini akan menampilkan laman logout tempat dimana logout dapat dilakukan.
-        4. Mengimport fungsi logout yang telah dibuat ke modul `urls.py` dan menambahkan routing fungsi tersebut pada list `urlpatterns`.
+        1. > Import `logout` ke `views.py`.
+        2. > Membuat fungsi `logout_user` di dalam `views.py` untuk mengatur logic proses logout.
+        3. > Membuat file `logout.html` di direktori `templates` yang ada di direktori `main`. File ini akan menampilkan laman logout tempat dimana logout dapat dilakukan.
+        4. > Mengimport fungsi logout yang telah dibuat ke modul `urls.py` dan menambahkan routing fungsi tersebut pada list `urlpatterns`.
 * **Checklist 2:**
-    1. Menjalankan aplikasi sigmart secara local dengan command `python manage.py runserver`.
-    2. Membuat 2 akun baru dengan meng-klik tombol register di login page.
-    3. Memasukan 3 produk (nama produk, deskripsi, dan harga) di setiap akun yang dibikin.
+    1. > Menjalankan aplikasi sigmart secara local dengan command `python manage.py runserver`.
+    2. > Membuat 2 akun baru dengan meng-klik tombol register di login page.
+    3. > Memasukan 3 produk (nama produk, deskripsi, dan harga) di setiap akun yang dibikin.
     ![alt text](user_dapqil.png)
     ![alt text](user_noQils.png)
 * **Checklist 3:**
-    1. Import `from django.contrib.auth.models import User` ke `models.py`.
-    2. Membuat dan menginstansiasi variabel user dalam class `Product` di modul `models.py` dengan class `ForeignKey` dari class `User`.
-    3. Menambahkan potongan-potongan kode untuk mengimplementasikan fungsi user di modul `views.py`.
+    1. > Import `from django.contrib.auth.models import User` ke `models.py`.
+    2. > Membuat dan menginstansiasi variabel user dalam class `Product` di modul `models.py` dengan class `ForeignKey` dari class `User`.
+    3. > Menambahkan potongan-potongan kode untuk mengimplementasikan fungsi user di modul `views.py`.
 * **Checklist 4:**
-    1. Membuka modul `views.py`.
-    2. Mengubah isi dari key `name` pada dictionary `context` yang berada di dalam fungsi `show_main` menjadi `request.user.username` untuk menampilkan nama dari user yang sedang login.
-    3. Menambahkan fungsi cookie bernama `last_login` ke dalam potongan kode `if form.is_valid()` yang ada di dalam fungsi `login_user`.
-    4. Menambahkan fungsi `response.delete_cookie('last_login')` ke dalam fungsi `logout_user`.
+    1. > Membuka modul `views.py`.
+    2. > Mengubah isi dari key `name` pada dictionary `context` yang berada di dalam fungsi `show_main` menjadi `request.user.username` untuk menampilkan nama dari user yang sedang login.
+    3. > Menambahkan fungsi cookie bernama `last_login` ke dalam potongan kode `if form.is_valid()` yang ada di dalam fungsi `login_user`.
+    4. > Menambahkan fungsi `response.delete_cookie('last_login')` ke dalam fungsi `logout_user`.
