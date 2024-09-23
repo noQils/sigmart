@@ -95,7 +95,7 @@ Method `is_valid` pada Django memiliki peran untuk memastikan data yang diproses
 * **redirect()** lebih fleksibel karena mendukung lebih banyak jenis argumen dan memudahkan pengembangan.
 
 ***2. Jelaskan cara kerja penghubungan model `Product` dengan `User`!***  
-**OneToMany:** Menggunakan `ForeignKey` untuk menghubungkan setiap produk ke satu pemilik (User). 
+Menggunakan `models.ForeignKey` untuk menghubungkan setiap produk ke satu pemilik (User). Dengan ini, setiap produk yang dimasukkan ke sistem akan hanya dimiliki oleh user yang sedang login saat menambahkan produk tersebut.
 
 ***3. Apa perbedaan antara authentication dan authorization, apakah yang dilakukan saat pengguna login? Jelaskan bagaimana Django mengimplementasikan kedua konsep tersebut.***  
 * **Authentication** adalah proses verifikasi identitas pengguna. Ini mencakup memastikan bahwa pengguna adalah siapa yang mereka klaim dengan cara memeriksa kredensial mereka, seperti username dan password.
@@ -160,7 +160,7 @@ Method `is_valid` pada Django memiliki peran untuk memastikan data yang diproses
     ![alt text](user_noQils.png)
 * **Checklist 3:**
     1. Import `from django.contrib.auth.models import User` ke `models.py`.
-    2. Membuat dan menginstansiasi variabel user dalam class `Product` di modul `models.py` dengan class `ForeignKey` dari class `User`.
+    2. Membuat dan menginstansiasi variabel user dalam class `Product` di modul `models.py` dengan value `models.ForeignKey(User, on_delete=models.CASCADE)`.
     3. Menambahkan potongan-potongan kode untuk mengimplementasikan fungsi user di modul `views.py`.
 * **Checklist 4:**
     1. Membuka modul `views.py`.
