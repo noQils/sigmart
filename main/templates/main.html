@@ -1,45 +1,123 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Welcome to SigMart</h1>
+<h1 class="welcome_statement">Hello {{ name }}, Welcome to {{ app }}!</h1>
 
-<h5>App: </h5>
-<p>{{ app }}<p>
+<div class="user_info_div">
+  <h5>App: {{ app }}</h5>
+  <h5>Name: {{ name }}</h5>
+  <h5>Class: {{ class }}</h5>
+</div>
 
-<h5>Name:</h5>
-<p>{{ name }}</p>
+<div class="product_div">
+  {% if not product_entries %}
+  <p>Belum ada data product pada SigMart.</p>
+  {% else %}
+  <table>
+    <tr>
+      <th>Product Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Rating</th>
+      <th>Date</th>
+    </tr>
 
-<h5>Class:</h5>
-<p>{{ class }}</p>
-
-{% if not product_entries %}
-<p>Belum ada data product pada SigMart.</p>
-{% else %}
-<table>
-  <tr>
-    <th>Product Name</th>
-    <th>Desription</th>
-    <th>Price</th>
-    <th>Rating</th>
-    <th>Date</th>
-  </tr>
-
-  {% comment %} Berikut cara memperlihatkan data product di bawah baris ini 
-  {% endcomment %} 
-  {% for product_entry in product_entries %}
-  <tr>
-    <td>{{product_entry.name}}</td>
-    <td>{{product_entry.description}}</td>
-    <td>{{product_entry.price}}</td>
-    <td>{{product_entry.rating}}</td>
-    <td>{{product_entry.date}}</td>
-  </tr>
-  {% endfor %}
-</table>
-{% endif %}
+    {% comment %} Berikut cara memperlihatkan data product di bawah baris ini 
+    {% endcomment %} 
+    {% for product_entry in product_entries %}
+    <tr>
+      <td>{{product_entry.name}}</td>
+      <td>{{product_entry.description}}</td>
+      <td>{{product_entry.price}}</td>
+      <td>{{product_entry.rating}}</td>
+      <td>{{product_entry.date}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+</div>
 
 <br />
 
-<a href="{% url 'main:create_product_entry' %}">
-  <button>Add New Product Entry</button>
-</a>
+<div class="buttons_div">
+  <a href="{% url 'main:create_product_entry' %}">
+    <button>Add New Product Entry</button>
+  </a>
+  <a href="{% url 'main:logout' %}">
+    <button>Logout</button>
+  </a>
+  <h5>Sesi terakhir login: {{ last_login }}</h5>
+</div>
+
+<style>
+  .welcome_statement {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .user_info_div {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  .product_div {
+    margin-top: 100px;
+    font-size: 18px;
+  }
+
+  .product_div p{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  
+  .product_div table{
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  .product_div th, .product_div td {
+    border: 2px solid black;
+    text-align: center;
+  }
+
+  .product_div th {
+    background-image: linear-gradient(to bottom, #06beb6, #48b1bf);
+    color: white;
+  }
+
+  .buttons_div {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons_div a {
+      margin-bottom: 10px;
+      text-align: center;
+  }
+
+  .buttons_div h5 {
+      font-size: 18px;
+      text-align: center;
+      margin-top: 5px;
+  }
+
+  .buttons_div button {
+    color: white;
+    padding: 7px 10px 7px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px transparent;
+    background-image: linear-gradient(to right, #06beb6, #48b1bf);
+  }
+</style>
 {% endblock content %}
