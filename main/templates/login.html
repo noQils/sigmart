@@ -14,7 +14,7 @@
       {{ form.as_table }}
       <tr>
         <td></td>
-        <td><input class="btn login_btn" type="submit" value="Login" /></td>
+        <td><input class="login_btn" type="submit" value="Login" /></td>
       </tr>
     </table>
   </form>
@@ -28,5 +28,44 @@
   {% endif %} Don't have an account yet?
   <a href="{% url 'main:register' %}">Register Now</a>
 </div>
+<style>
+  .login {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+  }
 
+  .login h1 {
+    margin-bottom: 20px;
+  }
+
+  table {
+    margin-bottom: 20px;
+  }
+
+  .login_btn {
+    color: white;
+    padding: 7px 10px 7px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px transparent;
+    background-image: linear-gradient(to right, #06beb6, #48b1bf);
+    cursor: pointer;
+  }
+
+  a {
+    color: #48b1bf;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
 {% endblock content %}

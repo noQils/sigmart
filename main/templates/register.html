@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<div class="login">
+<div class="register">
   <h1>Register</h1>
 
   <form method="POST">
@@ -28,5 +28,39 @@
   </ul>
   {% endif %}
 </div>
+<style>
+  .register {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+  }
 
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  table {
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    color: white;
+    padding: 7px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px transparent;
+    background-image: linear-gradient(to right, #06beb6, #48b1bf);
+    cursor: pointer;
+  }
+
+  ul {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+  }
+</style>
 {% endblock content %}
