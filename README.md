@@ -134,7 +134,7 @@ Method `is_valid` pada Django memiliki peran untuk memastikan data yang diproses
         * **Cookies Permanen:** Cookies yang disimpan untuk periode yang lebih lama dapat menjadi target bagi penyerang. Jika seorang penyerang mendapatkan akses ke perangkat pengguna, mereka dapat mengakses cookies yang tersimpan dan melakukan penyalahgunaan.
         * **Cookies Sesi:** Meskipun lebih aman karena hanya aktif selama sesi pengguna, jika tidak diatur dengan baik, mereka masih dapat berisiko jika terdapat kerentanan keamanan lainnya.
 
-***5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step***  
+***5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step***   
 * **Checklist 1:**
     * **Registrasi:**
         1. Menyalakan virtual environment.
