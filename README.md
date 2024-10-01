@@ -167,3 +167,60 @@ Menggunakan `models.ForeignKey` untuk menghubungkan setiap produk ke satu pemili
     2. Mengubah isi dari key `name` pada dictionary `context` yang berada di dalam fungsi `show_main` menjadi `request.user.username` untuk menampilkan nama dari user yang sedang login.
     3. Menambahkan fungsi cookie bernama `last_login` ke dalam potongan kode `if form.is_valid()` yang ada di dalam fungsi `login_user`.
     4. Menambahkan fungsi `response.delete_cookie('last_login')` ke dalam fungsi `logout_user`.
+
+***1. Jika terdapat beberapa CSS selector untuk suatu elemen HTML, jelaskan urutan prioritas pengambilan CSS selector tersebut!***  
+Dalam CSS, ketika terdapat beberapa selector yang menerapkan aturan berbeda pada elemen yang sama, urutan prioritas (atau specificity) akan menentukan aturan mana yang akan diterapkan. Urutan prioritas CSS ditentukan berdasarkan specificity, aturan importance, dan urutan kemunculan dalam kode.
+* **Aturan Importance:**
+    * Aturan CSS yang menggunakan `!important` memiliki prioritas tertinggi dan akan mengesampingkan aturan lainnya
+* **Specificity:**
+    * Specificity dihitung berdasarkan kombinasi dari selector yang digunakan. Semakin tinggi nilainya, semakin tinggi prioritasnya.
+* **Urutan Kemunculan:**
+    * Jika dua selector memiliki specificity yang sama, aturan yang muncul terakhir dalam kode akan diterapkan. Ini dikenal sebagai cascading.
+
+***2. Mengapa responsive design menjadi konsep yang penting dalam pengembangan aplikasi web? Berikan contoh aplikasi yang sudah dan belum menerapkan responsive design!***  
+Responsive design penting karena memungkinkan situs web menyesuaikan tampilannya di berbagai perangkat, seperti desktop, tablet, dan ponsel, sehingga pengalaman pengguna tetap optimal. Ini meningkatkan kenyamanan navigasi, memperbaiki SEO karena mesin pencari seperti Google memprioritaskan situs responsif, serta mempermudah pengelolaan dibandingkan membuat versi terpisah untuk setiap perangkat. Contoh aplikasi yang sudah menerapkan responsive design adalah Medium dan Airbnb, sedangkan beberapa situs pemerintah lama dan situs usaha kecil seringkali belum responsif, menyebabkan tampilan tidak optimal di perangkat mobile.
+
+***3. Jelaskan perbedaan antara margin, border, dan padding, serta cara untuk mengimplementasikan ketiga hal tersebut!***  
+* **Margin:** Ruang kosong di luar elemen yang memisahkan elemen tersebut dari elemen lain di sekitarnya. Margin tidak memiliki warna dan bersifat transparan.
+* **Border:** Garis yang mengelilingi elemen, terletak di antara margin dan padding. Border memiliki warna, ketebalan, dan gaya yang bisa diatur.
+* **Padding:** Ruang di dalam elemen, antara konten elemen dan border-nya. Padding bersifat transparan, tetapi memperluas area yang bisa dipengaruhi oleh background elemen.
+* **Contoh Implementasi:**
+```
+.container {
+    margin: 20px;
+    border: 2px solid black;
+    padding: 15px;
+}
+```
+
+***4. Jelaskan konsep flex box dan grid layout beserta kegunaannya!***  
+* **Flexbox (Flexible Box Layout):**  
+    * Flexbox adalah model layout satu dimensi yang digunakan untuk mengatur elemen dalam satu baris atau satu kolom. Flexbox dirancang untuk memberikan fleksibilitas dalam menyusun dan meratakan item di dalam container, terutama ketika ukuran item berubah.  
+    * Kegunaan:  
+        * Mengatur tata letak item secara horizontal atau vertikal.
+        * Mudah untuk membuat elemen menjadi responsif, dengan kemampuan untuk meratakan item, mendistribusikan ruang di antara item, dan mengatur urutan item secara fleksibel.
+        * Berguna untuk tata letak yang lebih sederhana, seperti navigasi horizontal, card layout, atau button group.
+* **Grid Layout:**  
+    * Grid Layout adalah model tata letak dua dimensi yang lebih kuat dan fleksibel dibandingkan Flexbox. Grid memungkinkan untuk mengatur elemen secara baik dalam baris maupun kolom, serta membagi area halaman menjadi grid yang kompleks.  
+    * Kegunaan:  
+        * Mengatur tata letak elemen secara vertikal dan horizontal (dua dimensi).
+        * Sangat cocok untuk membuat layout kompleks seperti tata letak halaman penuh, dashboard, atau template halaman yang membutuhkan pengaturan presisi.
+        * Membuat grid yang dapat diubah ukuran kolom atau barisnya sesuai dengan kebutuhan layout.
+
+***5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step***  
+* **Checklist 1:**
+    1. Dalam modul `views.py`, menambahkan fungsi `edit_product` untuk mengedit produk dan fungsi `delete_product` untuk menghapus produk.
+    2. Melakukan routing kedua fungsi tersebut dengan meng-import fungsi `edit_product` dan `delete_product` ke urls.py yang berada di direktori `main`.
+    3. Menambahkan *url pattern* dari kedua fungsi tersebut ke dalam list `urlpatterns` di dalam modul `urls.py`.
+    4. Membuat file `edit.html` di dalam direktori `templates` yand ada di direktori `main` untuk mengatur tampilan dari halaman saat mengedit produk.
+* **Checklist 2:**
+    1. Menambahkan Tailwind ke dalam projek django
+    2. Membuat file `global.css` sebagai template CSS *style* untuk projek django.
+    3. Mengisi file `global.css` dengan beberapa CSS *styling* seperti *custom background*.
+    3. Mengkostumisasi *design* halaman *login*, *register*, *add product*, dan *edit product* menggunakan Tailwind.
+    4. Menambahkan tampilan gambar dan pesan jika belum ada data produk yang dimasukkan oleh user yang sedang login.
+    5. Membuat file `card_poduct.html` di dalam direktori `templates` dalam direktori `main` yang berfungsi untuk menampilkan informasi tentang produk-produk yang telah di *add*.
+    6. Mengkostumisasi *design* tampilan *product card*.
+    7. Menambahkan dua *button* untuk setiap *product card*. Satu untuk mengedit produk dan satu lagi untuk menghapus produk.
+    8. Membuat file `navbar.html` pada direktori `templates` yang berada di direktori utama. File ini berfungsi untuk menampilkan *navigation bar* dari aplikasi.
+    9. Mengkostumisasi *design navbar* untuk dapat beradaptasi dengan ukuran *device* (*desktop* atau *mobile*).
