@@ -213,7 +213,7 @@ Responsive design penting karena memungkinkan situs web menyesuaikan tampilannya
     1. Dalam modul `views.py`, menambahkan fungsi `edit_product` untuk mengedit produk dan fungsi `delete_product` untuk menghapus produk.
     2. Melakukan routing kedua fungsi tersebut dengan meng-import fungsi `edit_product` dan `delete_product` ke urls.py yang berada di direktori `main`.
     3. Menambahkan *url pattern* dari kedua fungsi tersebut ke dalam list `urlpatterns` di dalam modul `urls.py`.
-    4. Membuat file `edit.html` di dalam direktori `templates` yand ada di direktori `main` untuk mengatur tampilan dari halaman saat mengedit produk.
+    4. Membuat file `edit_product.html` di dalam direktori `templates` yand ada di direktori `main` untuk mengatur tampilan dari halaman saat mengedit produk.
 * **Checklist 2:**
     1. Menambahkan Tailwind ke dalam projek django
     2. Membuat file `global.css` sebagai template CSS *style* untuk projek django.
