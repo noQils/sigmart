@@ -3,16 +3,24 @@ from django.forms import ModelForm
 from main.models import Product
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from django.utils.html import strip_tags
 
 class ProductForm(ModelForm):
     class Meta:
         model = Product
-        fields = ["name", "description", "price"]
+        fields = ["product_name", "description", "price"]
         widgets = {
-            'name': forms.TextInput(attrs={'placeholder': 'Enter product name'}),
+            'product_name': forms.TextInput(attrs={'placeholder': 'Enter product name'}),
             'description': forms.Textarea(attrs={'placeholder': 'Enter product description'}),
             'price': forms.NumberInput(attrs={'placeholder': 'Enter product price'}),
         }
+    def clean_product_name(self):
+        product_name = self.cleaned_data["product_name"]
+        return strip_tags(product_name)
+
+    def clean_desctiption(self):
+        description = self.cleaned_data["description"]
+        return strip_tags(description)
 
 class CustomUserCreationForm(UserCreationForm):
     class Meta:

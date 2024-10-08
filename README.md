@@ -27,8 +27,8 @@
     1. Pada direktori projek utama terdapat modul bernama `urls.py`. Pada file tersebut saya menambahkan rute URL yang mengarah ke tampilan main.
 * **Checklist 4:**
     1. Membuat class bernama Product dalam `models.py` yang terdapat dalam aplikasi main.
-    2. Menambahkan atribut-atribut wajib di dalam class Product yaitu name (nama produk/item), price (harga produk), dan description (deskripsi penjelasan tentang produk).
-    3. Selain atribut wajib, saya juga menambahkan dua atribut lain, yaitu rating (rating dari pembeli tentang produk) dan date (tanggal).
+    2. Menambahkan atribut-atribut wajib di dalam class Product yaitu `product_name` (nama produk/item), `price` (harga produk), dan `description` (deskripsi penjelasan tentang produk).
+    3. Selain atribut wajib, saya juga menambahkan dua atribut lain, yaitu `rating` (rating dari pembeli tentang produk) dan `date` (tanggal).
 * **Checklist 5:**
     1. Menambahkan fungsi show_main dalam modul `views.py` pada aplikasi main.
     2. Membuat variabel dictionary baru bernama context. Dictionary ini akan diisi dengan data-data yang akan ditampilkan saat aplikasi main diakses.
@@ -73,7 +73,7 @@ Method `is_valid` pada Django memiliki peran untuk memastikan data yang diproses
     2. Menghapus file `db.sqlite3` sebelumnya.
     3. Mengubah id yang tadinya integer menjadi UUID.
     4. Membuat file `forms.py` di direktori `main`.
-    5. Menambahkan list `field` di dalam `forms.py` dengan nilai `["name", "description", "price"]`.
+    5. Menambahkan list `field` di dalam `forms.py` dengan nilai `["product_name", "description", "price"]`.
     6. Menambahkan fungsi `create_product_entry` pada modul `views.py`.
     7. Menambahkan pattern urls dari fungsi `create_product_entry` ke `urls.py` yang ada dalam direktori `main`.
     8. Membuat file `create_product_entry.html` untuk tampilan memasukkan product baru.
@@ -134,7 +134,7 @@ Menggunakan `models.ForeignKey` untuk menghubungkan setiap produk ke satu pemili
         * **Cookies Permanen:** Cookies yang disimpan untuk periode yang lebih lama dapat menjadi target bagi penyerang. Jika seorang penyerang mendapatkan akses ke perangkat pengguna, mereka dapat mengakses cookies yang tersimpan dan melakukan penyalahgunaan.
         * **Cookies Sesi:** Meskipun lebih aman karena hanya aktif selama sesi pengguna, jika tidak diatur dengan baik, mereka masih dapat berisiko jika terdapat kerentanan keamanan lainnya.
 
-***5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step***  
+***5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step!***  
 * **Checklist 1:**
     * **Registrasi:**
         1. Menyalakan virtual environment.
@@ -168,6 +168,7 @@ Menggunakan `models.ForeignKey` untuk menghubungkan setiap produk ke satu pemili
     3. Menambahkan fungsi cookie bernama `last_login` ke dalam potongan kode `if form.is_valid()` yang ada di dalam fungsi `login_user`.
     4. Menambahkan fungsi `response.delete_cookie('last_login')` ke dalam fungsi `logout_user`.
 
+## Jawaban Pertanyaan Tugas 5
 ***1. Jika terdapat beberapa CSS selector untuk suatu elemen HTML, jelaskan urutan prioritas pengambilan CSS selector tersebut!***  
 Dalam CSS, ketika terdapat beberapa selector yang menerapkan aturan berbeda pada elemen yang sama, urutan prioritas (atau specificity) akan menentukan aturan mana yang akan diterapkan. Urutan prioritas CSS ditentukan berdasarkan specificity, aturan importance, dan urutan kemunculan dalam kode.
 * **Aturan Importance:**
@@ -207,7 +208,7 @@ Responsive design penting karena memungkinkan situs web menyesuaikan tampilannya
         * Sangat cocok untuk membuat layout kompleks seperti tata letak halaman penuh, dashboard, atau template halaman yang membutuhkan pengaturan presisi.
         * Membuat grid yang dapat diubah ukuran kolom atau barisnya sesuai dengan kebutuhan layout.
 
-***5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step***  
+***5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step!***  
 * **Checklist 1:**
     1. Dalam modul `views.py`, menambahkan fungsi `edit_product` untuk mengedit produk dan fungsi `delete_product` untuk menghapus produk.
     2. Melakukan routing kedua fungsi tersebut dengan meng-import fungsi `edit_product` dan `delete_product` ke urls.py yang berada di direktori `main`.
@@ -224,3 +225,32 @@ Responsive design penting karena memungkinkan situs web menyesuaikan tampilannya
     7. Menambahkan dua *button* untuk setiap *product card*. Satu untuk mengedit produk dan satu lagi untuk menghapus produk.
     8. Membuat file `navbar.html` pada direktori `templates` yang berada di direktori utama. File ini berfungsi untuk menampilkan *navigation bar* dari aplikasi.
     9. Mengkostumisasi *design navbar* untuk dapat beradaptasi dengan ukuran *device* (*desktop* atau *mobile*).
+
+## Jawaban Pertanyaan Tugas 6
+***1. Jelaskan manfaat dari penggunaan JavaScript dalam pengembangan aplikasi web!***  
+JavaScript adalah kunci dalam pengembangan aplikasi web karena memberikan kemampuan interaktivitas yang menarik, seperti animasi dan efek yang membuat halaman web lebih hidup. Dengan JavaScript, kita dapat memproses data langsung di browser tanpa perlu memuat ulang halaman, sehingga pengalaman pengguna jadi lebih cepat dan responsif. Kita juga bisa dengan mudah mengubah tampilan halaman dengan menambah atau menghapus elemen sesuai kebutuhan. Selain itu, JavaScript bekerja di semua browser modern, jadi bisa diakses dari berbagai perangkat. Terdapat banyak framework dan library, seperti React dan Angular, yang membantu mempercepat proses pengembangan. Dengan fitur asynchronous, aplikasi dapat berjalan lebih lancar tanpa gangguan, dan kita bahkan bisa menggunakan JavaScript di sisi server dengan Node.js. Komunitas yang besar dan banyaknya sumber daya yang tersedia juga membuatnya lebih mudah untuk belajar dan berkembang dalam menggunakan JavaScript.
+
+***2. Jelaskan fungsi dari penggunaan `await` ketika kita menggunakan `fetch()`! Apa yang akan terjadi jika kita tidak menggunakan `await`?***  
+Penggunaan `await` saat menggunakan `fetch()` berfungsi untuk menunggu hasil dari permintaan HTTP sebelum melanjutkan eksekusi kode berikutnya, sehingga memungkinkan kita untuk menangani respon dengan lebih jelas dan terstruktur. Jika kita menggunakan `await`, kode akan berhenti sementara hingga respon diterima, yang membuatnya lebih mudah untuk menangkap kesalahan dengan blok `try...catch`. Sebaliknya, jika kita tidak menggunakan `await`, kode akan tetap berjalan tanpa menunggu respon, yang bisa menyebabkan kesalahan saat mencoba mengakses data dari respon yang belum tersedia, dan kita hanya akan mendapatkan Promise, bukan nilai langsung. Dengan demikian, `await` membantu memastikan bahwa kita menangani data dengan benar dan membuat kode lebih mudah dibaca dan dipelihara.
+
+***3. Mengapa kita perlu menggunakan decorator `csrf_exempt` pada view yang akan digunakan untuk AJAX `POST`?***  
+Penggunaan decorator `@csrf_exempt` pada view di Django diperlukan saat menangani permintaan AJAX POST yang mungkin tidak menyertakan token CSRF. Secara default, Django melindungi aplikasi dari serangan CSRF dengan memeriksa token pada setiap permintaan POST, yang penting untuk formulir yang dikirimkan oleh pengguna. Namun, saat menggunakan AJAX, pengelolaan token CSRF bisa menjadi rumit, dan `@csrf_exempt` memungkinkan penonaktifan pemeriksaan ini, sehingga memudahkan pengembangan dan pengujian. Ini juga berguna saat membuat API yang diakses oleh klien lain yang tidak dapat mengelola token CSRF. Meskipun praktis, penting untuk menggunakan decorator ini dengan hati-hati karena menonaktifkan pemeriksaan CSRF dapat mengurangi keamanan aplikasi.
+
+***4. Pada tutorial PBP minggu ini, pembersihan data input pengguna dilakukan di belakang (backend) juga. Mengapa hal tersebut tidak dilakukan di frontend saja?***  
+Pembersihan data input pengguna sebaiknya dilakukan di backend meskipun sudah dilakukan di frontend karena beberapa alasan penting. Pertama, **keamanan** adalah faktor utama; data yang dikirim dari frontend dapat dimanipulasi oleh pengguna yang tidak bertanggung jawab, jadi hanya mengandalkan pembersihan di frontend tidak cukup untuk melindungi aplikasi dari serangan seperti injeksi SQL atau XSS (Cross-Site Scripting). Kedua, **validasi konsistensi** perlu dilakukan di backend untuk memastikan bahwa data yang diterima sesuai dengan format dan aturan yang diharapkan, terlepas dari validasi yang mungkin telah diterapkan di frontend. Selain itu, pembersihan di backend memungkinkan pemrosesan data secara terpusat, sehingga menghindari duplikasi logika di berbagai tempat dalam aplikasi. Terakhir, dengan melakukan pembersihan di backend, aplikasi tetap dapat berfungsi dengan baik meskipun diakses oleh berbagai klien atau platform, seperti aplikasi mobile atau API, yang mungkin tidak memiliki validasi frontend yang sama. Dengan demikian, meskipun pembersihan di frontend penting untuk pengalaman pengguna, validasi di backend adalah langkah krusial untuk menjaga keamanan dan integritas data.
+
+***5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step!***  
+* **Checklist 1: AJAX GET**
+    1. Menghapus potongan kode `product_entries = ProductEntry.objects.filter(user=request.user)` dan `'product_entries': product_entries,` dalam fungsi `show_main` pada modul `views.py`.
+    2. Menghapus potongan kode yang menampilkan `card_product` pada `main.hmtl`.
+    3. Mengubah bagian yang dihapus tersebut dengan `<div id="mood_entry_cards"></div>`.
+    4. Menambahkan fungsi javascript (`getProductEntries()` dan `refreshProductEntries()`) pada file `main.html` untuk menampilkan `card_product` yang berisi informasi terkait produk. `getProductEntries()` berfungsi untuk mengambil data-data produk yang sudah ada dalam sistem. `refreshProductEntries()` berfungsi untuk me-*refresh* produk-produk yang ditampilkan di halaman utama.
+    5. Menambahkan modal sebagai form untuk menambahkan produk dengan AJAX.
+    6. Mengimplementasikan fungsi `strip_tags` dalam modul `views.py` dan `forms.py` untuk membersihkan data baru
+    7. Mengimplementasikan `DOMPurify` pada `main.html` untuk membersihkan data.
+* **Checklist 1: AJAX POST**
+    1. Menmabhakan button pada `main.html` untuk menampilkan form untuk menambahkan produk baru menggunakan AJAX.
+    2. Membuat fungsi baru bernama `add_product_entry_ajax` yang berfungsi untuk menambahkan produk baru menggunakan AJAX.
+    3. Melakukan routing fungsi `add_product_entry_ajax` dengan mengimport fungsi tersebut ke dalam modul `urls.py` yang berada di dalam direktori `main`. Tambahkan juga *url pattern*-nya ke dalam list `urlpatterns`.
+    4. Menambahkan fungsi `addProductEntry()` pada script `main.html` yang terhubung ke fungsi `add_product_entry_ajax`. Fungsi ini akan memproses data produk baru yang dimasukkan dalam form modal dan menambahkan produk baru tersebut ke sistem.
+    5. Menambahkan potongan kode di dalam fungsi `addProductEntry()` sehingga fungsi `refreshProductEntries()` dipanggil setiap kali produk baru ditambahkan ke dalam sistem. Ini dilakukan untuk me-*refresh* halaman utama setelah produk baru ditambahkan tanpa perlu *reload* halaman.

@@ -5,7 +5,7 @@ import uuid
 class Product(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    name = models.CharField(max_length=255)
+    product_name = models.CharField(max_length=255)
     description = models.TextField()
     price = models.IntegerField()
     rating = models.FloatField(default = 0)
